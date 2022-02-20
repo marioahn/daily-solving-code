@@ -1,19 +1,24 @@
-a, b, c = map(int,input().split())
-d = int(input())
+# ---------------------------------------
+# 내 코드1
+# a, b, c = map(int,input().split())
+# d = int(input())
 
-sum = a * 3600 + b * 60 + c
-plus_sum = sum + d
+# sum = a * 3600 + b * 60 + c
+# plus_sum = sum + d
 
-hour = plus_sum // 3600
-minute = plus_sum % 3600 // 60
-second = plus_sum % 3600 % 60
+# hour = plus_sum // 3600
+# minute = plus_sum % 3600 // 60
+# second = plus_sum % 3600 % 60
 
-if hour >= 24:
-    hour -=24
+# if hour >= 24:
+#     hour -=24
 
-print(hour, minute, second)
+# print(hour, minute, second)
+# 위 코드는 d가 500,000까지인 것을 간과한 코드
+# ---------------------------------------
 
-# 아래 코드 이해하기
+# ---------------------------------------
+# 타인 코드
 # H, M, S = map(int, input().split())
 # D = int(input()) 
 
@@ -34,3 +39,19 @@ print(hour, minute, second)
 #     H -= 24
 
 # print(H,M,S)
+# ---------------------------------------
+
+a, b, c = map(int,input().split())
+d = int(input())
+
+sum = a * 3600 + b * 60 + c
+plus_sum = sum + d
+
+hour = plus_sum // 3600
+minute = plus_sum % 3600 // 60
+second = plus_sum % 3600 % 60
+
+if hour >= 24:
+    hour -= (hour // 24) * 24
+
+print(hour, minute, second)

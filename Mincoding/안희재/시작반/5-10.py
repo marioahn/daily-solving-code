@@ -1,9 +1,10 @@
-def input():
+arr = []
+def Input(arr):
     arr = list(map(int,input().split()))
+    return arr
 
-def output():
-    arr2 = []
-    for i in range(4):
-        arr2.append(arr[3-i])
+def output(arr):
+    for i in Input(arr)[::-1]:
+        print(i, end = '')
 
-# 흠;?
+output(arr)

@@ -5,6 +5,8 @@
     # 아니면, 모든 단어를 제일 긴 단어만큼 늘려야 하나? *같은걸로?
     # 에러? try,except? IndexError: string index out of range
     # 에러처리가 제일 깔끔한듯!
+    # 아 근데, 이 방법 ㄴㄴ. 파이썬에서만 가능함 타 언어에서는 절대 ㄴㄴ;;;
+    # 안 좋은 방법임
 
 T = int(input())
 
