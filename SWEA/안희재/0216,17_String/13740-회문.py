@@ -66,3 +66,25 @@ for tc in range(1,T+1):
 #                 vboard[i] += board[j][i]
 #         check(vboard)
 # ----------------------------------------------------
+
+# -----------------------------------
+# 교수님 풀이
+# t=input()
+# for tc in range(1,t+1):
+#     n,m =map(int,input().split())
+#     arr=[input() for _ in range(n)]
+
+#     for i in range(n):
+#         temp=''
+#         for j in range(n):
+#             temp+=arr[j][i]
+#         arr+=[temp]
+        
+#     for str1 in arr:
+#         for i in range(n-m+1):
+#             temp=str1[i:i+m]
+#             if temp==temp[::-1]:
+#                 ans=temp
+
+#     print("#{} {}".format(tc,ans))
+# -----------------------------------
