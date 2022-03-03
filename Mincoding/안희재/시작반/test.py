@@ -1,4 +1,6 @@
-print(ord('a'))
-print(ord('A'))
-print(ord('Z'))
-print(ord('9'))
+arr = ['A', 'b']
+
+print(arr[0].isupper())
+arr[0] = arr[0].lower()
+
+print(arr)
