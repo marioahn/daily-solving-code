@@ -1,6 +1,6 @@
-arr = ['A', 'b']
+def iinput():
+    num = int(input())
+    return num
 
-print(arr[0].isupper())
-arr[0] = arr[0].lower()
-
-print(arr)
+for i in range(2):
+    print(iinput())
