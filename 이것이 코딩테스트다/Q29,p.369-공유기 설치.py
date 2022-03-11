@@ -1,3 +1,4 @@
+# 이진탐색
 n,c = map(int,input().split())
 
 house = []
@@ -17,18 +18,18 @@ result = 0
 while (start <= end):
     mid = (start+end)//2 # 해당 gap
     old = house[0]
-    count = 1
+    count = 1 # 0번 인덱스에는 무조건 공유기 설치!
 
     for i in range(1, len(house)):
         if house[i] >= old+mid: # gap 이상
             count+=1
-            old = house[i]
+            old = house[i] # 여기에 공유기 설치!
     
     if count >=c:
         start = mid + 1
         result = mid
     else:
-        end = mid - 1
+        end = mid - 1 # start = mid - 1가 아님
 
 print(result)
 
