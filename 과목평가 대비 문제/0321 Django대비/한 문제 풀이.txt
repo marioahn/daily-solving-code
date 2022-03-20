@@ -1,0 +1,36 @@
+1.
+(a) Forbidden
+(b) 502
+(c) Unauthorized
+
+2. (1) ->django-admin startproject <프로젝트명> .
+
+3. (1), (4)
+
+4.
+(a)DateTime
+(b)auto_now
+(c)Char
+
+5. 
+(1) articles = Article.objects.all()[::-1]
+(2) articles = Article.objects.order_by('-pk')
+
+6.
+(4) - template -> view / view -> controller
+
+7. (2),(3)
+
+8. 
+- INSTALLED_APPS
+- (1), (3), (2)
+
+9. 
+- views.py
+- Django에서 컨트롤타워의 역할을 한다
+
+10.
+(a) - (2)
+(b) - (4)
+(c) - (1)
+(d) - (3)
