@@ -1,6 +1,9 @@
-arr = [3, '1', 4, '2']
+arr = [list(map(int,input().split())) for _ in range(3)]
+Gop = 1
+for i in range(3):
+    Sum = 0
+    for j in range(3):
+        Sum += arr[j][i]
+    Gop *= Sum
 
-arr.sort(key=lambda i: int(i))
-print(arr)
-
-# word.sort(key=lambda x: ord(x[0]), reverse=True)
+print(Gop)

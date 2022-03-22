@@ -1,5 +1,3 @@
-n = int(input())
+a = 'abc'
 
-result = format(n, ',')
-print(result)
-
+print(a.index('a'))
