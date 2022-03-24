@@ -1,5 +1,6 @@
 # 각 문자는 한번만 사용가능하지
 # 조합이용해서 풀기!!!!! - 교수님 say
+# 애초에 이거 조합이 아님.... 원상복구도 아니고.. 교수님 코드로 ㄱ..
 import copy
 word = list(input())
 idx = [0,1,2,3,4]
@@ -37,6 +38,5 @@ def abc(level):
                 word = backup
         used[i] = 0
         
-
 abc(0)
 print(Max)
