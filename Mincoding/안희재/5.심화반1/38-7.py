@@ -6,7 +6,6 @@ Max, path, result = 0, [], []
 def dfs(Sum): # Sum도 전역변수보다는, 함수 인자로 넣기
     global Max, arr, result
     if sum(arr) == 0:
-        
         if Max < Sum:
             Max = Sum
             result = []

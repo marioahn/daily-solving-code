@@ -25,3 +25,5 @@ def dfs(start,level,Gop):
 
 dfs(0,0,1)
 print(cnt)
+
+# 빽트랙킹 -> 요소가 0이면 당연히 곱하기 0이니까 back..! 조건 추가해주면 됨

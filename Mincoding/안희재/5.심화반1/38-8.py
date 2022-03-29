@@ -26,7 +26,7 @@ for i in range(4):
 
 path = [''] * N
 Max = 0
-result = []
+result = [] # 여기때문에 path랑 같이 바뀌는 것일수도
 def dfs(start,level,kill):
     global Max, result, arr
     if level == N:

@@ -1,3 +1,2 @@
-from collections import deque
-n = int(input())
-f
+a = [(1, 4), (3, 2), (4, 6)]
+print(a[0][1])
