@@ -39,4 +39,7 @@ for tc in range(1,T+1):
                     visit[result-10] = 1
                     q.append((result-10,cnt+1))
 
+                
+
+
     print(f'#{tc} {bfs(N,0)}')
