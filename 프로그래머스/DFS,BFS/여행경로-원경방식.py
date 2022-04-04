@@ -2,7 +2,6 @@
     # deepcopy대신에, pop(인덱스) 넣어서 처리했음
     # 여전히, "통과 (654.31ms, 15.2MB)" => 오래걸리긴 함..ㅠㅠ
     # DFS가 아닌가.....
-import copy
 def dfs(lst,ans,arg=0):
     global answer,visited,length
     if arg == length:
